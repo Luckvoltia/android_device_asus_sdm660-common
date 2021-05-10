@@ -286,10 +286,14 @@
     </string-array>
 
     <!-- QS System Info -->
-    <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone5/temp</string>
-    <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
-    <string name="config_sysGPUFreq">/sys/kernel/gpu/gpu_clock</string>
-    <string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
-    <integer name="config_sysCPUTempMultiplier">100</integer>
-    <integer name="config_sysBatteryTempMultiplier">10</integer>
+    <string name="config_cpu_temp_path">/sys/class/thermal/thermal_zone5/temp</string>
+    <string name="config_battery_temp_path">/sys/class/power_supply/battery/temp</string>
+    <string name="config_gpu_clock_path">/sys/kernel/gpu/gpu_clock</string>
+    <string name="config_gpu_busy_path">/sys/kernel/gpu/gpu_busy</string>
+    <string name="config_battery_level_path">/sys/class/power_supply/battery/capacity</string>
+
+    <!-- Dual status bar -->
+    <bool name="config_default_dual_status_bar">false</bool>
+    <integer name="config_default_dual_status_bar_mode">1</integer>
+
 </resources>
